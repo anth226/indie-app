@@ -5,11 +5,11 @@ import LandingHeader from "./landing_header";
 class HomePage extends Component {
   handleLoginGoogle = () => {
     const googleLoginURL = process.env.REACT_APP_GOOGLE_LOGIN;
-    window.open(googleLoginURL, "_self ");
+    window.open(googleLoginURL, "_self");
   };
   handleLoginFacebook = () => {
     const googleLoginURL = process.env.REACT_APP_FACEBOOK_LOGIN;
-    window.open(googleLoginURL, "_self ");
+    window.open(googleLoginURL, "_self");
   };
 
   render() {

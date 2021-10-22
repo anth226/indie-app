@@ -11,11 +11,11 @@ const LoginForm = ({ onSubmit }) => {
   };
   const handleLoginGoogle = () => {
     const googleLoginURL = process.env.REACT_APP_GOOGLE_LOGIN;
-    window.open(googleLoginURL, "_self ");
+    window.open(googleLoginURL, "_self");
   };
   const handleLoginFacebook = () => {
     const googleLoginURL = process.env.REACT_APP_FACEBOOK_LOGIN;
-    window.open(googleLoginURL, "_self ");
+    window.open(googleLoginURL, "_self");
   };
 
 
@@ -77,7 +77,7 @@ const LoginForm = ({ onSubmit }) => {
         <p>or</p>
       </div>
       <div className="login-social-btns">
-        <Button type="primary" size="large" onClick={handleLoginGoogle}>
+        <Button type="primary" size="large" onClick={handleLoginFacebook}>
           <img src={FacebookIcon} alt="" className="mr-2" /> Log in with facebook
         </Button>
         <Button type="ghost" size="large" onClick={handleLoginGoogle}>
