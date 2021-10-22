@@ -9,6 +9,15 @@ const LoginForm = ({ onSubmit }) => {
   const onFinish = (values) => {
     onSubmit(values);
   };
+  const handleLoginGoogle = () => {
+    const googleLoginURL = process.env.REACT_APP_GOOGLE_LOGIN;
+    window.open(googleLoginURL, "_self ");
+  };
+  const handleLoginFacebook = () => {
+    const googleLoginURL = process.env.REACT_APP_FACEBOOK_LOGIN;
+    window.open(googleLoginURL, "_self ");
+  };
+
 
   return (
     <Form
@@ -68,10 +77,10 @@ const LoginForm = ({ onSubmit }) => {
         <p>or</p>
       </div>
       <div className="login-social-btns">
-        <Button type="primary" size="large">
+        <Button type="primary" size="large" onClick={handleLoginGoogle}>
           <img src={FacebookIcon} alt="" className="mr-2" /> Log in with facebook
         </Button>
-        <Button type="ghost" size="large">
+        <Button type="ghost" size="large" onClick={handleLoginGoogle}>
           <img src={GoogleIcon} alt="" />
         </Button>
         <Button type="primary" size="large">

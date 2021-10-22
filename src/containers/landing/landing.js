@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import LandingHeader from "./landing_header";
 
 class HomePage extends Component {
+  handleLoginGoogle = () => {
+    const googleLoginURL = process.env.REACT_APP_GOOGLE_LOGIN;
+    window.open(googleLoginURL, "_self ");
+  };
+  handleLoginFacebook = () => {
+    const googleLoginURL = process.env.REACT_APP_FACEBOOK_LOGIN;
+    window.open(googleLoginURL, "_self ");
+  };
+
   render() {
     return (
       <div className="home_layout">
@@ -357,18 +366,22 @@ class HomePage extends Component {
                       <ul>
                         <li className="facebook">
                           <Link to="#">
-                            <i className="fab fa-facebook"></i> Log in with
-                            Facebook
+                            <div onClick={this.handleLoginFacebook}>
+                              <i className="fab fa-facebook"></i> Log in with
+                              Facebook
+                            </div>
                           </Link>
                         </li>
                         <li className="google">
-                          <Link to="#">
-                            <img
-                              src={require("../../assets/images/landing/google_icon.png")}
-                              className="img-fluid"
-                              alt=""
-                            />{" "}
-                            Log in with Google
+                          <Link>
+                            <div onClick={this.handleLoginGoogle}>
+                              <img
+                                src={require("../../assets/images/landing/google_icon.png")}
+                                className="img-fluid"
+                                alt=""
+                              />{" "}
+                              Log in with Google
+                            </div>
                           </Link>
                         </li>
                         <li className="twitter">

@@ -163,7 +163,14 @@ export function getUser(userId) {
     const client = Client(true);
     try {
       let res = await client.get(`${API_URL}/user/${userId}`);
-      return res.data.user;
+      if (res?.data?.user) {
+        const user = res.data.user;
+        cookie.save("user", user, { path: "/" });
+        dispatch({ type: AUTH_USER });
+        dispatch({ type: FETCH_USER, payload: user });
+        setMessageUserId({ userId: user._id })(dispatch);
+        history.push("/home");
+      }
     } catch (err) {
       createNotification("GET User", errorMessage(err));
     }
