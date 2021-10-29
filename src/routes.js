@@ -26,6 +26,7 @@ import ForgotPassword from "./containers/auth/forgot_password";
 import ResetPassword from "./containers/auth/reset_password";
 import Resend from "./containers/auth/resend";
 import ConfirmEmail from "./containers/auth/confirm-email";
+import LoginSuccess from "./containers/auth/login-success";
 
 // Import user related Pages
 import Profile from "./containers/user/profile/index";
@@ -67,7 +68,8 @@ class Routes extends React.Component {
           <Route exact path="/search" component={RequireAuth(SearchVideo)} />
 
           <Route path="/register" component={Register} />
-          <Route path="/login" component={Login} />
+          <Route path="/login" component={Login} /> 
+          <Route path='/google/login/success' component={LoginSuccess}/>
           <Route path="/logout" component={Logout} />
           <Route path="/forgot-password/:mode" component={ForgotPassword} />
           <Route
