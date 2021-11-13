@@ -6,7 +6,7 @@ class HomePage extends Component {
   render() {
     return (
       <div className="landing-home">
-        <div className="menu-modal">
+        {/* <div className="menu-modal">
           <div className="menu-modal__wrapper">
             stop-color
             <div className="menu-modal__header">
@@ -89,7 +89,7 @@ class HomePage extends Component {
               </a>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <header className="header">
           <div className="header__container container">
@@ -128,14 +128,14 @@ class HomePage extends Component {
             </nav>
             <div className="header__btn-group">
               <button
-                className="header__sign-up btn btn--link m:show@md"
+                className="btn btn--link m:show@md header__sign-up"
                 data-login-open="sign-up"
                 data-modal-open="modal-login"
               >
                 Sign Up
               </button>
               <button
-                className="header__login btn btn--outline"
+                className="btn btn--outline header__login"
                 data-login-open="login"
                 data-modal-open="modal-login"
               >
@@ -211,7 +211,7 @@ class HomePage extends Component {
           </div>
         </section>
 
-        <div id="audience" className="audience">
+        {/* <div id="audience" className="audience">
           <div className="audience__slider">
             <div className="audience-slider-controller">
               <strong className="audience-slider-controller__title title title--size-lg t:center t:left@lg">
@@ -529,9 +529,9 @@ class HomePage extends Component {
               </div>
             </section>
           </div>
-        </div>
+        </div> */}
 
-        <section id="info" className="info">
+        {/* <section id="info" className="info">
           <div className="container">
             <h2 className="info__title title title--size-lg t:center t:left@lg">
               How <br className="m:hide@lg" /> it works
@@ -580,9 +580,9 @@ class HomePage extends Component {
               GET STARTED
             </a>
           </div>
-        </section>
+        </section> */}
 
-        <section id="reviews" className="reviews">
+        {/* <section id="reviews" className="reviews">
           <div className="container">
             <h2 className="reviews__title title title--size-lg title--decor-line t:center">
               More than <br className="m:hide@lg" /> 10 000 people
@@ -1326,7 +1326,7 @@ class HomePage extends Component {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
     );
   }

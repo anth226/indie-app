@@ -136,6 +136,7 @@ br {
   transition-duration: 400ms;
   line-height: 1;
   cursor: pointer;
+  padding: 10px!important;
 }
 
 .btn--default {
@@ -154,10 +155,9 @@ br {
 }
 
 .btn--outline {
-  border: 1px solid #F0BD6F;
-  border-radius: 500px;
-  padding: calc(0.16rem * var(--size-a-1-5)) calc(0.32rem * var(--size-a-1-5));
-  color: #F0BD6F;
+  border: 1px solid #F0BD6F!important;
+  padding: 10px 20px!important;
+  color: #F0BD6F !important;
 }
 
 .btn--outline:hover {
@@ -698,6 +698,7 @@ textarea::placeholder {
 
 .menu__list {
   display: flex;
+  color:#ffffff;
 }
 
 .menu__list-item:not(:last-child) {
@@ -711,6 +712,7 @@ textarea::placeholder {
 
 .menu__link:hover {
   color: #F0BB6D;
+  text-decoration: none;
 }
 
 .menu-toggle {
@@ -2185,14 +2187,14 @@ textarea::placeholder {
 }
 
 .header__sign-up {
-  color: #F05280;
-  margin-right: 0.3rem;
-  font-size: 0.24rem;
+  color: #F05280!important;
+  margin-right: 0.3rem!important;
+  font-size: 0.24rem!important;
 }
 
 .header__login {
   padding: 0.14rem 0.56rem;
-  font-size: 0.28rem;
+  font-size: 0.24rem!important;
   line-height: 1.139;
 }
 
