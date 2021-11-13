@@ -136,7 +136,7 @@ br {
   transition-duration: 400ms;
   line-height: 1;
   cursor: pointer;
-  padding: 10px!important;
+  padding: 10px !important;
 }
 
 .btn--default {
@@ -155,8 +155,8 @@ br {
 }
 
 .btn--outline {
-  border: 1px solid #F0BD6F!important;
-  padding: 10px 20px!important;
+  border: 1px solid #F0BD6F !important;
+  padding: 10px 20px !important;
   color: #F0BD6F !important;
 }
 
@@ -412,7 +412,7 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.form-radio__input:hover ~ .form-radio__controller {
+.form-radio__input:hover~.form-radio__controller {
   background-color: #000;
   color: #fff;
 }
@@ -421,7 +421,7 @@ textarea::placeholder {
   cursor: auto;
 }
 
-.form-radio__input:checked ~ .form-radio__controller {
+.form-radio__input:checked~.form-radio__controller {
   background-color: #000;
   color: #fff;
 }
@@ -463,13 +463,13 @@ textarea::placeholder {
   cursor: pointer;
 }
 
-.form-checkbox__input:checked ~ .form-checkbox__decor {
+.form-checkbox__input:checked~.form-checkbox__decor {
   border-color: #000;
   --checkbox-decor-bg: #000;
   --checkbox-decor-size: 0.714em;
 }
 
-.form-checkbox__input:checked ~ .icon {
+.form-checkbox__input:checked~.icon {
   opacity: 1;
 }
 
@@ -573,6 +573,7 @@ textarea::placeholder {
   --dp-block: block;
   display: var(--dp-block);
   width: 100%;
+  max-width: 12rem!important;
   padding-left: var(--container-gap);
   padding-right: var(--container-gap);
   margin-left: auto;
@@ -698,7 +699,7 @@ textarea::placeholder {
 
 .menu__list {
   display: flex;
-  color:#ffffff;
+  color: #ffffff;
 }
 
 .menu__list-item:not(:last-child) {
@@ -1011,7 +1012,7 @@ textarea::placeholder {
   flex-wrap: wrap;
 }
 
-.social > *:not(:last-child) {
+.social>*:not(:last-child) {
   margin-right: 0.25em;
 }
 
@@ -1047,7 +1048,7 @@ textarea::placeholder {
   z-index: 1;
 }
 
-.swiper-container-vertical > .swiper-wrapper {
+.swiper-container-vertical>.swiper-wrapper {
   flex-direction: column;
 }
 
@@ -1066,16 +1067,16 @@ textarea::placeholder {
   transform: translate3d(0px, 0, 0);
 }
 
-.swiper-container-multirow > .swiper-wrapper {
+.swiper-container-multirow>.swiper-wrapper {
   flex-wrap: wrap;
 }
 
-.swiper-container-multirow-column > .swiper-wrapper {
+.swiper-container-multirow-column>.swiper-wrapper {
   flex-wrap: wrap;
   flex-direction: column;
 }
 
-.swiper-container-free-mode > .swiper-wrapper {
+.swiper-container-free-mode>.swiper-wrapper {
   transition-timing-function: ease-out;
   margin: 0 auto;
 }
@@ -1116,7 +1117,7 @@ textarea::placeholder {
 
 /* CSS Mode */
 
-.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-css-mode>.swiper-wrapper {
   overflow: auto;
   scrollbar-width: none;
   /* For Firefox */
@@ -1124,19 +1125,19 @@ textarea::placeholder {
   /* For Internet Explorer and Edge */
 }
 
-.swiper-container-css-mode > .swiper-wrapper::-webkit-scrollbar {
+.swiper-container-css-mode>.swiper-wrapper::-webkit-scrollbar {
   display: none;
 }
 
-.swiper-container-css-mode > .swiper-wrapper > .swiper-slide {
+.swiper-container-css-mode>.swiper-wrapper>.swiper-slide {
   scroll-snap-align: start start;
 }
 
-.swiper-container-horizontal.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-horizontal.swiper-container-css-mode>.swiper-wrapper {
   scroll-snap-type: x mandatory;
 }
 
-.swiper-container-vertical.swiper-container-css-mode > .swiper-wrapper {
+.swiper-container-vertical.swiper-container-css-mode>.swiper-wrapper {
   scroll-snap-type: y mandatory;
 }
 
@@ -1435,16 +1436,16 @@ textarea::placeholder {
   transform-origin: right top;
 }
 
-.swiper-container-horizontal > .swiper-pagination-progressbar,
-.swiper-container-vertical > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-container-horizontal>.swiper-pagination-progressbar,
+.swiper-container-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 100%;
   height: 4px;
   left: 0;
   top: 0;
 }
 
-.swiper-container-vertical > .swiper-pagination-progressbar,
-.swiper-container-horizontal > .swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+.swiper-container-vertical>.swiper-pagination-progressbar,
+.swiper-container-horizontal>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
   width: 4px;
   height: 100%;
   left: 0;
@@ -1577,7 +1578,7 @@ textarea::placeholder {
   }
 }
 
-.grid > * {
+.grid>* {
   --row: 1;
   --col-start: auto;
   --row-start: auto;
@@ -2187,14 +2188,14 @@ textarea::placeholder {
 }
 
 .header__sign-up {
-  color: #F05280!important;
-  margin-right: 0.3rem!important;
-  font-size: 0.24rem!important;
+  color: #F05280 !important;
+  margin-right: 0.3rem !important;
+  font-size: 0.24rem !important;
 }
 
 .header__login {
   padding: 0.14rem 0.56rem;
-  font-size: 0.24rem!important;
+  font-size: 0.24rem !important;
   line-height: 1.139;
 }
 
@@ -2215,7 +2216,7 @@ textarea::placeholder {
 }
 
 .home__content {
-  margin: -0.15rem 0 -0.27rem;
+  margin-bottom: -0.15rem 0 -0.27rem;
 }
 
 .home__title {
@@ -2227,6 +2228,7 @@ textarea::placeholder {
   text-align: center;
   line-height: 1.139;
   margin-bottom: 0.2rem;
+  color: #ffffff;
 }
 
 .home__subtitle {
@@ -2238,6 +2240,7 @@ textarea::placeholder {
   display: flex;
   flex-direction: column;
   text-align: center;
+  color: #ffffff;
 }
 
 .home__subtitle span {
@@ -2258,8 +2261,9 @@ textarea::placeholder {
   margin: 0 auto;
   height: 1em;
   width: 1em;
-  font-size: 2.92rem;
-  border-radius: 50%;
+  font-size: 2.7rem!important;
+  display: flex!important;
+  border-bottom: none!important;
   background: url("../images/global/decor-line.png") no-repeat center top/cover, linear-gradient(180deg, rgba(240, 187, 109, 0.329) 0%, rgba(21, 25, 24, 0) 100%);
   margin: 10px auto 0.72rem;
 }
@@ -2287,17 +2291,23 @@ textarea::placeholder {
 
 .home__access .btn {
   width: 100%;
+  font-size: 16px !important;
+  font-weight: bold;
+  padding: 15px 20px!important;
+  border-radius: 5px !important;
 }
 
 .home__access-text {
   margin: 0.32rem 0 0 0;
   line-height: 1.139;
   font-size: calc(0.18rem * var(--size-2));
+  color: #ffffff;
 }
 
 .home__description {
   font-size: 0.36rem;
   line-height: 1.879;
+  color: #ffffff;
 }
 
 .home__description b {
