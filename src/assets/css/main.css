@@ -2315,6 +2315,7 @@ textarea::placeholder {
 }
 
 .audience {
+  background-color: #0D1215!important;
   min-height: 100vh;
   padding: 1.18rem 0 1.09rem;
   position: relative;
@@ -2373,7 +2374,11 @@ textarea::placeholder {
   height: 1em;
   width: 1em;
   font-size: 1.3rem;
-  border: 1px solid #DD5079;
+  border: 1px solid #DD5079!important;
+  display: flex!important;
+  justify-content: center!important;
+  align-items: center!important;
+  border-radius: none!important;
 }
 
 .audience-slider-prev .icon,
@@ -4488,6 +4493,7 @@ textarea::placeholder {
 
   .audience-slider__views {
     font-size: 0.14rem;
+    color: #ffffff;
   }
 
   .audience-card__subtitle {

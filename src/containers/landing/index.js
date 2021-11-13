@@ -211,7 +211,7 @@ class HomePage extends Component {
           </div>
         </section>
 
-        {/* <div id="audience" className="audience">
+        <div id="audience" className="audience">
           <div className="audience__slider">
             <div className="audience-slider-controller">
               <strong className="audience-slider-controller__title title title--size-lg t:center t:left@lg">
@@ -529,7 +529,7 @@ class HomePage extends Component {
               </div>
             </section>
           </div>
-        </div> */}
+        </div>
 
         {/* <section id="info" className="info">
           <div className="container">
