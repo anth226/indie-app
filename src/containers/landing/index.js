@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import { Helmet } from "react-helmet";
-import "../../assets/css/main.css";
 
 class HomePage extends Component {
   render() {
@@ -531,7 +530,7 @@ class HomePage extends Component {
           </div>
         </div>
 
-        {/* <section id="info" className="info">
+        <section id="info" className="info">
           <div className="container">
             <h2 className="info__title title title--size-lg t:center t:left@lg">
               How <br className="m:hide@lg" /> it works
@@ -580,7 +579,7 @@ class HomePage extends Component {
               GET STARTED
             </a>
           </div>
-        </section> */}
+        </section>
 
         {/* <section id="reviews" className="reviews">
           <div className="container">
